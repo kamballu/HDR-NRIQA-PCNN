@@ -3,7 +3,7 @@
 Code for implemntation of the proposed percetual CNN. 
 
 * Paper: [IEEE link](http://ieeexplore.ieee.org/document/8123879/).
-* A simplified explanation of the proposed method is provided [here](\docs\HDR-PCNN.pdf). 
+* A simplified explanation of the proposed method is provided [here](/docs/HDR-PCNN.pdf). 
 
 
 ## Main Contents
@@ -37,7 +37,7 @@ plt.show()
 ```
 
 
-![png](docs\output_2_0.png)
+![png](docs/output_2_0.png)
 
 
 The model have to be initalied with this call. This loads the model and the weights required. 
@@ -69,5 +69,5 @@ plt.show()
 ```
 
 
-![png](docs\output_8_0.png)
+![png](docs/output_8_0.png)
 
