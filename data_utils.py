@@ -71,10 +71,10 @@ def imshow(img,w=10,h=10,c=3,title=" "):
     "Helper function imshow"
     plt.figure()
     if len(img.shape) <= 3:
-        plt.imshow(img)
+        plt.imshow(img, cmap='jet')
     else:
         test = reconstructimage( img, w,h,c,subsample=1)
-        plt.imshow(test)
+        plt.imshow(test, cmap='jet')
     plt.colorbar()
     plt.title(title)
     plt.show()
