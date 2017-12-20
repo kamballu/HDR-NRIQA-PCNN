@@ -72,7 +72,7 @@ plt.show()
 ![png](docs/output_8_0.png)
 
 ## Advanced
-For prediction of the perceptual resistances, the subnetworks can be used directly. An example usage can be found in *predict_quality()*. 
+For prediction of the perceptual resistances and error estimates, the subnetworks can be used directly. An example usage can be found in *model_IQA_HDR->predict_quality(<name>,draw=1)* in model.py. 
 
 
 ```python
