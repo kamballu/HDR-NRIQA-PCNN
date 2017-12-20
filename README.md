@@ -80,14 +80,14 @@ For prediction of the perceptual resistances, the subnetworks can be used direct
 ```
 
 
-![png](data/output_10_0.png)
+![png](docs/output_10_0.png)
 
 
 
-![png](data/output_10_1.png)
+![png](docs/output_10_1.png)
 
 
 
-![png](data/output_10_2.png)
+![png](docs/output_10_2.png)
 
 
