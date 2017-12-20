@@ -45,14 +45,14 @@ plt.show()
 
 Since the dynamic range of the image is high, it is difficult to show these images on a conventional display. Hence a log() of luminance values of the image is used for display. 
 
-To predit quality with the model, we generate an instance of the IQA object. This loads the model and the weights required. 
+To predict the quality of this image with the proposed model, we generate an instance of the IQA object. This loads the model and the weights required. 
 
 
 ```python
 qmodel  = model_IQA_HDR(load_weights=1)
 ```
 
-Once initalized the quality prediction is performed by using this call.
+Once initalized the quality prediction is performed by using *.predict_quality* method. We add timing variables to check runtime. 
 
 
 ```python
@@ -64,7 +64,7 @@ stop_time  = time.time()
 *perceptual_distortion* has the overall distortion score for the image. In the paper, the score we use is DMOS. In simple terms, this is just the amount of percieved noise in the HDR image. The larger the distortion score, the worser looking the image.
 *fmap* shows the exact locations of these distortions in the image. Hence heavily distorted regions will have a high value in the fmap. 
 
-Note that the results are shown with predictions on nonoverlapping blocks of size 32x32 on the image. Blocks can be made by sampling around every pixel for a more continous quality map. This is computaionally expensive.
+Note that the results are shown with predictions on nonoverlapping blocks of size 32x32 on the image. Blocks can be made by sampling around every pixel for a more continous quality map. This is computaionally expensive, so we donot use it here.
 
 
 ```python
