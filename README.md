@@ -14,9 +14,12 @@ Code for implemntation of the proposed perceptual CNN.
 * \weights : Trained weights for dataset in paper.
 * \tmp : Has visualization of the sub-networks. 
 
+## Requirements
+Refer to requirements.txt. 
+
 ## Demo
 
-Entire model and associated functions are in model.py. This file and weights would suffice for quality prediction on images.
+Entire model and associated functions are in model.py. This file and weights would suffice for quality prediction on images. In this demo, we use a few other libraries aloong with model.py for visualization. 
 
 
 ```python
@@ -26,7 +29,7 @@ import cv2
 import numpy as np
 import time
 ```
-Since the dynamic range of the image is high, it is difficult to show these images on a conventional display. Hence a log() of luminance values of the image is used for display. 
+Lets start with reading some HDR images. This code uses opencv's imread() function. 
 
 ```python
 fname = "data\\test.exr"
@@ -39,6 +42,8 @@ plt.show()
 
 ![png](docs/output_2_0.png)
 
+
+Since the dynamic range of the image is high, it is difficult to show these images on a conventional display. Hence a log() of luminance values of the image is used for display. 
 
 To predit quality with the model, we generate an instance of the IQA object. This loads the model and the weights required. 
 
@@ -73,14 +78,13 @@ plt.show()
 ![png](docs/output_8_0.png)
 
 ## Advanced
-For prediction of the perceptual resistances and error estimates, the subnetworks can be used directly. An example usage can be found in *model_IQA_HDR->predict_quality(<name>,draw=1)* in model.py. 
+For prediction of the perceptual resistances and error estimates, the subnetworks can be used directly. An example usage can be found in *predict_quality(,draw=1)* function of *model_IQA_HDR* object in model.py. 
 
 
 ```python
 [perceptual_distortion,fmap] = qmodel.predict_quality(fname,draw=1)
 ```
 
-The predicted error in the image, referred to as $\hat{\delta}$ in the paper is the result of E-net. 
 
 ![png](docs/output_10_0.png)
 
@@ -91,5 +95,11 @@ The predicted error in the image, referred to as $\hat{\delta}$ in the paper is 
 
 
 ![png](docs/output_10_2.png)
+
+Setting draw=1 in predict_quality() will output the intermediate values of the proposed method. In the example above,  
+* Deltahat is the mathematical error because of the distortion. This is produced by E-net. 
+* Perceptual resistance represents the difficulty of a viewer to percieve the error deltahat. 
+* Perceptual distortion is the localization of the error (same as fmap above).
+
 
 
