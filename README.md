@@ -40,7 +40,7 @@ plt.show()
 ![png](docs/output_2_0.png)
 
 
-The model have to be initalied with this call. This loads the model and the weights required. 
+The model is initalied with the following call. This loads the model and the weights required. 
 
 
 ```python
