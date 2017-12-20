@@ -1,6 +1,6 @@
 
 # Blind Quality Estimation by Disentangling Perceptual and Noisy Features in High Dynamic Range Images
-Code for implemntation of the proposed percetual CNN. 
+Code for implemntation of the proposed perceptual CNN. 
 
 * Paper: [IEEE link](http://ieeexplore.ieee.org/document/8123879/).
 * A simplified explanation of the proposed method is provided [here](/docs/HDR-PCNN.pdf). 
