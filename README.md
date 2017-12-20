@@ -80,7 +80,7 @@ For prediction of the perceptual resistances and error estimates, the subnetwork
 [perceptual_distortion,fmap] = qmodel.predict_quality(fname,draw=1)
 ```
 
-The predicted error in the image, referred to as \hat{\delta} in the paper is the result of E-net. 
+The predicted error in the image, referred to as $\hat{\delta}$ in the paper is the result of E-net. 
 
 ![png](docs/output_10_0.png)
 
