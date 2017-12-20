@@ -71,3 +71,23 @@ plt.show()
 
 ![png](docs/output_8_0.png)
 
+## Advanced
+For prediction of the perceptual resistances, the subnetworks can be used directly. An example usage can be found in *predict_quality()*. 
+
+
+```python
+[perceptual_distortion,fmap] = qmodel.predict_quality(fname,draw=1)
+```
+
+
+![png](output_10_0.png)
+
+
+
+![png](output_10_1.png)
+
+
+
+![png](output_10_2.png)
+
+
