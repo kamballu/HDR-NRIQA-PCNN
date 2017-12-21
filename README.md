@@ -20,7 +20,7 @@ Refer to requirements.txt.
 
 ## Demo
 
-Entire model and associated functions are in model.py. This file and weights would suffice for quality prediction on images. In this demo, we use a few other libraries aloong with model.py for visualization. 
+Entire model and associated functions are in model.py. This file and weights would suffice for quality prediction on images. In this demo, we use a few other libraries along with model.py for visualization. 
 
 
 ```python
