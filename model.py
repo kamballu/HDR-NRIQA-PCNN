@@ -249,7 +249,7 @@ class model_IQA_HDR():
                 imshow(delta.reshape( ((wd-32)//32,-1 )), title="Delta" )
             
             mos_train = val
-            algo_score = self.predict_quality(f1,draw)
+            algo_score = self.predict_quality(f1,draw)[0]
             machine.append(algo_score)
             human.append(mos_train)
 
