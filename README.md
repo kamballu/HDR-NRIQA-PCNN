@@ -1,6 +1,6 @@
 
 # Blind Quality Estimation by Disentangling Perceptual and Noisy Features in High Dynamic Range Images
-Code for implemntation of the proposed perceptual CNN. If you use this software package in your research, we kindly ask you to reference the associated paper.
+Code for implementation of the proposed perceptual CNN. If you use this software package in your research, we kindly ask you to reference the associated paper.
 
 * Cite: N. K. Kottayil, G. Valenzise, F. Dufaux and I. Cheng, "Blind Quality Estimation by Disentangling Perceptual and Noisy Features in High Dynamic Range Images," in IEEE Transactions on Image Processing, vol. 27, no. 3, pp. 1512-1525, March 2018.
 * Paper: [IEEE link](http://ieeexplore.ieee.org/document/8123879/), DOI: 10.1109/TIP.2017.2778570.
